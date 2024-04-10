@@ -93,3 +93,69 @@ git config --global user.name "bukebuke"
 - 误删文件的恢复方法
 
 ![tupian](/Git学习/picture/确定删除文件.jpg)
+
+### 本地仓库和远程仓库之间的联系
+
+#### 方法一
+
+1. 使用 git init 将一个文件夹初始化为一个 Git 本地仓库。
+
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/第一步.jpg)
+
+2. 使用 SSH 或 HTTPS 将本地仓库与 GitHub 上的远程仓库链接。
+
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/第二步.jpg)
+
+3. 使用 git remote add origin <远程仓库地址> 将本地仓库与远程仓库关联。
+
+- 第一次绑定时要给远程仓库指定一个名字，一般都是用的"origin"。
+
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/第四步.jpg)
+
+4. 使用 git push -u origin <分支名> 将本地分支推送到远程仓库。第一次推送时可能需要 -u 选项来建立关联。在以后的推送或者拉取时就可以简化命令。
+
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/第五步.jpg)
+
+- git push -u origin <分支名> 其实git push -u <远程仓库名字> <分支名> ,但是默认都是给远程仓库命名为origin。
+- git push 命令会默认将本地的所有分支推送到远程仓库中。(等价于git push --all origin)
+- 也可以指定推送某个分支 git push origin <分支名>
+   
+#### 方法二
+
+- 先在GitHub上建立一个仓库(记得建立个README文件，不然是空仓库，空仓库是无法克隆的)
+
+- git clone到本地电脑，这样就省了手动在电脑中git init 创建本地版本库和git remote add origin这个链接本地仓库和远程仓库的过程。
+
+- 然后正常add 和commit将文件保存到本地仓库.
+
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/法2的clone和add和commit.jpg)
+
+
+- 然后就可以直接git push进远程仓库里面了。
+
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/法2的git_push.jpg)
+
+- 可以看出成功的上传了
+ 
+![tupian](/Git学习/picture/本地仓库和远程仓库之间传输/成功上传.jpg)
+
+### 取消本地仓库跟远程仓库的联系
+
+![tupian](/Git学习/picture/解除跟远程库的关系.jpg)
+
+- 解除联系之后就不能使用git push了，因为本地仓库不知道push到那个远程仓库中，需要再次建立联系才能push。
+
+![tupian](/Git学习/picture/解绑之后重新绑定.jpg)
+
+### 合并分支
+
+![tupian](/Git学习/picture/合并分支.jpg)
+
+### 查看所有分支以及当前所处的分支
+
+![tupian](/Git学习/picture/查看所有分支以及当前所处的分支.jpg)
+
+### 删除分支
+
+![tupian](/Git学习/picture/删除分支.jpg)
+  
