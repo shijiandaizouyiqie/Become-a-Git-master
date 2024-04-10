@@ -2,6 +2,8 @@
 
 ## [教程链接](https://www.liaoxuefeng.com/wiki/896043488029600)
 
+## [Git指令表格](/Git学习/git-cheat-sheet.pdf)
+
 ## 工作原理
 
 ![tupian](/Git学习/picture/版本库.jpg)
@@ -158,4 +160,19 @@ git config --global user.name "bukebuke"
 ### 删除分支
 
 ![tupian](/Git学习/picture/删除分支.jpg)
-  
+
+### 分支小结
+
+- Git鼓励大量使用分支：
+
+1. 查看分支：git branch
+
+2. 创建分支：git branch <name>
+
+3. 切换分支：git checkout <name>或者git switch <name>
+
+4. 创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+5. 合并某分支到当前分支：git merge <name>
+
+6. 删除分支：git branch -d <name>
