@@ -161,6 +161,17 @@ git config --global user.name "bukebuke"
 
 ![tupian](/Git学习/picture/删除分支.jpg)
 
+### 分支冲突
+
+![tupian](/Git学习/picture/分支冲突1.jpg)
+![tupian](/Git学习/picture/分支冲突2.jpg)
+![tupian](/Git学习/picture/分支冲突3.jpg)
+
+- 分支冲突解决方法
+
+![tupian](/Git学习/picture/解决分支冲突1.jpg)
+![tupian](/Git学习/picture/解决分支冲突2.jpg)
+
 ### 分支小结
 
 - Git鼓励大量使用分支：
