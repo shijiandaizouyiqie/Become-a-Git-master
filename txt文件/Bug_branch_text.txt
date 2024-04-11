@@ -1,8 +1,4 @@
 测试Bug分支
 
-<<<<<<< Updated upstream
-修复master分支下的issue-101
-=======
-
 测试Bug分支2.0,现在修改文件，准备stash
->>>>>>> Stashed changes
+
